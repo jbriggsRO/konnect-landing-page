@@ -28,11 +28,11 @@
     }
 
     /* =========================
-       MAIN CONTENT
+       MAIN CONTENT WRAPPER
     ========================= */
 
     .konnekt-ad-main {
-      padding: 42px 60px 35px;
+      padding: clamp(24px, 4vw, 42px) clamp(20px, 5vw, 60px) clamp(24px, 3.5vw, 35px);
       background: #1B2A4A;
     }
 
@@ -41,10 +41,10 @@
     ========================= */
 
     .konnekt-logo {
-      width: 310px;
-      max-width: 85%;
+      width: 100%;
+      max-width: 310px;
       height: auto;
-      margin: 0 0 22px -8px;
+      margin: 0 0 clamp(16px, 2.5vw, 22px) -4px;
       padding: 0;
       display: block;
     }
@@ -54,7 +54,7 @@
     ========================= */
 
     .konnekt-eyebrow {
-      font-size: 12px;
+      font-size: clamp(11px, 1.2vw, 13px);
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -68,10 +68,10 @@
     ========================= */
 
     .konnekt-ad h1 {
-      font-size: clamp(34px, 3.6vw, 50px);
-      line-height: 1;
-      letter-spacing: -1.2px;
-      margin: 0 0 24px;
+      font-size: clamp(28px, 4vw, 50px);
+      line-height: 1.08;
+      letter-spacing: -1px;
+      margin: 0 0 clamp(18px, 2.5vw, 24px);
       font-weight: 800;
       color: #ffffff;
       text-align: left;
@@ -82,17 +82,17 @@
     }
 
     /* =========================
-       MAIN HERO IMAGE (2 PEOPLE)
+       HERO IMAGE (2 PEOPLE)
     ========================= */
 
     .konnekt-hero-image-wrap {
       width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: clamp(20px, 3vw, 30px);
     }
 
     .konnekt-hero-image {
       width: 100%;
-      max-width: 720px;
+      max-width: 760px;
       height: auto;
       max-height: 480px;
       object-fit: cover;
@@ -101,20 +101,20 @@
     }
 
     /* =========================
-       LOWER SECTION: COPY (LEFT) + SMALLER 2ND IMAGE (RIGHT)
+       LOWER SECTION: COPY + 2ND IMAGE
     ========================= */
 
     .konnekt-lower-row {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      gap: 40px;
+      gap: clamp(24px, 3.5vw, 40px);
       width: 100%;
     }
 
     .konnekt-copy-content {
-      flex: 1 1 60%;
-      max-width: 680px;
+      flex: 1 1 58%;
+      min-width: 0;
       text-align: left;
     }
 
@@ -122,10 +122,11 @@
       flex: 0 0 auto;
       display: flex;
       justify-content: flex-end;
+      align-self: center;
     }
 
     .konnekt-secondary-image {
-      width: 240px;
+      width: clamp(180px, 22vw, 240px);
       height: auto;
       max-height: 240px;
       object-fit: contain;
@@ -139,7 +140,7 @@
 
     .konnekt-ad-copy-text {
       width: 100%;
-      font-size: 14px;
+      font-size: clamp(13px, 1.2vw, 15px);
       line-height: 1.45;
       margin-bottom: 12px;
       color: #ffffff;
@@ -158,7 +159,7 @@
     .konnekt-tagline {
       margin-top: 10px;
       margin-bottom: 14px;
-      font-size: 14px;
+      font-size: clamp(13px, 1.2vw, 15px);
       font-weight: 700;
       line-height: 1.3;
       color: #D3A017;
@@ -166,32 +167,32 @@
     }
 
     /* =========================
-       WHITE LOGO BAR (2-ROW GRID)
+       WHITE LOGO BAR (RESPONSIVE GRID)
     ========================= */
 
     .konnekt-logo-bar {
       background: #ffffff;
       border-radius: 8px;
-      padding: 14px 20px;
+      padding: clamp(10px, 1.5vw, 14px) clamp(12px, 2vw, 20px);
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       align-items: center;
       justify-items: center;
-      gap: 16px 20px;
+      gap: clamp(10px, 1.5vw, 16px) clamp(10px, 1.8vw, 20px);
       max-width: 660px;
       margin-bottom: 12px;
     }
 
     .konnekt-brand-logo {
-      height: 40px;
-      width: auto;
-      max-width: 95px;
+      height: clamp(24px, 3vw, 38px);
+      width: 100%;
+      max-width: 90px;
       object-fit: contain;
       display: block;
     }
 
     .konnekt-license-disclaimer {
-      font-size: 10px;
+      font-size: clamp(9px, 0.9vw, 11px);
       line-height: 1.4;
       color: #cbd5e1;
       text-align: left;
@@ -205,17 +206,17 @@
     .konnekt-gold-footer {
       background: #D3A017;
       color: #1B2A4A;
-      padding: 25px 60px;
+      padding: clamp(20px, 2.5vw, 25px) clamp(20px, 5vw, 60px);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 30px;
+      gap: 20px;
     }
 
     /* COMING SEPTEMBER */
 
     .konnekt-coming {
-      font-size: clamp(22px, 3vw, 32px);
+      font-size: clamp(22px, 2.8vw, 32px);
       font-weight: 800;
       line-height: 1;
       letter-spacing: -1px;
@@ -239,7 +240,7 @@
       display: inline-block;
       background: #1B2A4A;
       color: #ffffff;
-      padding: 14px 30px;
+      padding: 14px clamp(20px, 2.5vw, 32px);
       text-decoration: none;
       font-size: 13px;
       font-weight: 800;
@@ -255,103 +256,49 @@
     }
 
     /* =========================
-       TABLET (1024px & Below)
+       TABLETS & MEDIUM SCREENS (920px & Below)
     ========================= */
 
-    @media screen and (max-width: 1024px) {
-      .konnekt-ad-main {
-        padding: 40px 40px 32px;
-      }
-
+    @media screen and (max-width: 920px) {
       .konnekt-hero-image {
         max-width: 100%;
       }
 
       .konnekt-logo-bar {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 12px 16px;
-      }
-
-      .konnekt-brand-logo {
-        height: 34px;
-        max-width: 80px;
-      }
-
-      .konnekt-secondary-image {
-        width: 200px;
-      }
-
-      .konnekt-gold-footer {
-        padding: 23px 40px;
+        grid-template-columns: repeat(4, 1fr);
       }
     }
 
     /* =========================
-       MOBILE (768px & Below)
+       MOBILE PHONES (720px & Below)
     ========================= */
 
-    @media screen and (max-width: 768px) {
-      .konnekt-ad-main {
-        padding: 35px 25px 32px;
-      }
-
-      .konnekt-logo {
-        width: 220px;
-        margin-left: -5px;
-        margin-bottom: 20px;
-      }
-
-      .konnekt-eyebrow {
-        font-size: 11px;
-        margin-bottom: 7px;
-      }
-
-      .konnekt-ad h1 {
-        font-size: 34px;
-        line-height: 1.05;
-        letter-spacing: -1px;
-        margin-bottom: 18px;
-      }
-
+    @media screen and (max-width: 720px) {
       .konnekt-lower-row {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 24px;
       }
 
       .konnekt-copy-content {
         width: 100%;
-        max-width: 100%;
-      }
-
-      .konnekt-logo-bar {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 14px 12px;
-        padding: 12px 14px;
-      }
-
-      .konnekt-brand-logo {
-        height: 32px;
+        flex: 1 1 100%;
       }
 
       .konnekt-secondary-image-wrap {
         width: 100%;
-        justify-content: flex-start;
+        justify-content: center;
       }
 
       .konnekt-secondary-image {
-        width: 180px;
+        width: 220px;
+        max-width: 60%;
       }
 
       .konnekt-gold-footer {
-        padding: 25px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 18px;
-      }
-
-      .konnekt-coming {
-        font-size: 28px;
+        gap: 16px;
       }
 
       .konnekt-contact-button {
@@ -361,38 +308,18 @@
     }
 
     /* =========================
-       SMALL PHONES (480px & Below)
+       SMALL MOBILE (480px & Below)
     ========================= */
 
     @media screen and (max-width: 480px) {
-      .konnekt-ad-main {
-        padding: 30px 20px;
-      }
-
-      .konnekt-logo {
-        width: 195px;
-        margin-left: -4px;
-      }
-
-      .konnekt-ad h1 {
-        font-size: 30px;
-      }
-
       .konnekt-logo-bar {
         grid-template-columns: repeat(3, 1fr);
         gap: 12px 10px;
-      }
-
-      .konnekt-brand-logo {
-        height: 26px;
+        padding: 10px 12px;
       }
 
       .konnekt-secondary-image {
-        width: 150px;
-      }
-
-      .konnekt-gold-footer {
-        padding: 23px 20px;
+        width: 180px;
       }
     }
   </style>
@@ -466,7 +393,7 @@
           Your Fashion. Your Passion. Your Hero.
         </div>
 
-        <!-- WHITE BRAND LOGOS BAR (2 ROWS) -->
+        <!-- WHITE BRAND LOGOS BAR (2 ROWS ON DESKTOP, ADAPTIVE ON MOBILE) -->
         <div class="konnekt-logo-bar">
           <img class="konnekt-brand-logo" src="https://cdn.shopify.com/s/files/1/0795/0457/2707/files/army_-_color.png?v=1762815224" alt="U.S. Army">
           <img class="konnekt-brand-logo" src="https://cdn.shopify.com/s/files/1/0795/0457/2707/files/marines_-_white_bg.png?v=1762815266" alt="U.S. Marine Corps">
